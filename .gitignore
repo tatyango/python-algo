@@ -9,6 +9,7 @@ venv/
 
 # PyCharm project files
 .idea/
+.idea/leetcode/
 
 # Test output and logs
 *.log
