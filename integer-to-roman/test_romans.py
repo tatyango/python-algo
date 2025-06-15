@@ -16,12 +16,13 @@ class TestRoman(unittest.TestCase):
             with self.subTest(roman=roman):
                 self.assertEqual(self.s.romanToInt(roman), value)
 
+
     def test_int_to_roman_examples(self):
         cases = {
             3: "III",
             4: "IV",
-            58: "LVIII",
-            1992: "MCMXCII"
+            58: "LVIII",    # 50 + 5 + 3
+            1992: "MCMXCII" # 1000 + 900 + 90 + 2
         }
         for value, roman in cases.items():
             with self.subTest(value=value):
