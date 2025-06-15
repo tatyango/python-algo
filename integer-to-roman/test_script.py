@@ -9,6 +9,8 @@ class TestRoman(unittest.TestCase):
         cases = {
             "III": 3,
             "IV": 4,
+            "MCMXCII": 1992,
+            "LVIII": 58
         }
         for roman, value in cases.items():
             with self.subTest(roman=roman):
@@ -18,6 +20,8 @@ class TestRoman(unittest.TestCase):
         cases = {
             3: "III",
             4: "IV",
+            58: "LVIII",
+            1992: "MCMXCII"
         }
         for value, roman in cases.items():
             with self.subTest(value=value):
