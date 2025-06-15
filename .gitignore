@@ -1,0 +1,39 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment folders
+venv/
+.venv/
+
+# PyCharm project files
+.idea/
+
+# Test output and logs
+*.log
+*.out
+*.coverage
+.cache/
+.tox/
+coverage.xml
+htmlcov/
+
+# Jupyter Notebook checkpoints (if applicable)
+.ipynb_checkpoints/
+
+# Package build artifacts
+build/
+dist/
+*.egg-info/
+
+# Environment and dependency managers
+.env
+.env.*
+*.venv
+
+# VSCode (if you also use it)
+.vscode/
+
+# macOS system files
+.DS_Store
