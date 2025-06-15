@@ -30,16 +30,16 @@ class Solution:
             'D': 500,
             'M': 1000,
         }
+
         total = 0
         prev = 0
 
-        for character in reversed(s):
-            current = val_map[character]
-            if current >= prev:
+        for char in reversed(s):
+            current = val_map[char]
+            if current < prev:
                 total -= current
             else:
                 total += current
             prev = current
-        return total
 
-        raise NotImplementedError
+        return total
