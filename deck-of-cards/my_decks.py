@@ -9,3 +9,5 @@ class Solution:
         for n in range(2, max(vals) + 1):
             if all(v % n == 0 for v in vals): return True
         return False
+
+# o(N) ??
