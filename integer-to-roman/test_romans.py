@@ -39,5 +39,15 @@ class TestRoman(unittest.TestCase):
                 self.assertEqual(self.s.intToRoman(num), roman)
                 self.assertEqual(self.s.romanToInt(roman), num)
 
+    def test_mixed_complex_values(self):
+        complex_values = {
+            2421:"MMCDXXI",             # 2000 (MM) + 400 (CD) + 20 (XX) + 1 (I)
+            3888: "MMMDCCCLXXXVIII"     # 3000 (MMM) + 800 (DCCC) + 80 (LXXX) + 8 (VIII)
+        }
+        for num, roman in complex_values.items():
+            with self.subTest(num=num):
+                self.assertEqual(self.s.intToRoman(num), roman)
+                self.assertEqual(self.s.romanToInt(roman), num)
+
 if __name__ == "__main__":
     unittest.main()
