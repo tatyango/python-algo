@@ -28,5 +28,16 @@ class TestRoman(unittest.TestCase):
             with self.subTest(value=value):
                 self.assertEqual(self.s.intToRoman(value), roman)
 
+    def test_repeats(self):
+        repeats = {
+            3:"III",
+            30: "XXX",
+            300: "CCC",
+        }
+        for num, roman in repeats.items():
+            with self.subTest(num=num):
+                self.assertEqual(self.s.intToRoman(num), roman)
+                self.assertEqual(self.s.romanToInt(roman), num)
+
 if __name__ == "__main__":
     unittest.main()
