@@ -1,0 +1,20 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    #directory: /.github
+    directory: /
+    schedule:
+      interval: monthly
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: monthly
+    #  TODO Dockerfile add one later
+    # - package-ecosystem: docker
+    #   directory: /
+    #   schedule:
+    #     interval: monthly
+    #   ignore:
+    #     - dependency-name: python
+    #       update-types:
+    #         - version-update:semver-major
